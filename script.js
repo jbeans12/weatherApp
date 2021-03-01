@@ -33,13 +33,13 @@ function displayResults (weather) {
     date.innerText = dateBuiler(now);
     
     let temp = document.querySelector('.current .temp');
-    temp.innerHTML = `Temperature: ${Math.round(weather.main.temp)}<span> °F</span>`;
+    temp.innerHTML = `Temperature: ${Math.round(weather.main.temp)}<span>°F</span>`;
      
     let weatherEl = document.querySelector('.current .weather');
     weatherEl.innerText = `Current Weather: ${(weather.weather[0].main)}`;
 
     let highLow = document.querySelector('.current .high-low');
-    highLow.innerText = `Low/High Temperature: ${Math.round(weather.main.temp_min)} °F/${Math.round(weather.main.temp_max)} °F`;
+    highLow.innerText = `Low/High Temp: ${Math.round(weather.main.temp_min)}°F/${Math.round(weather.main.temp_max)}°F`;
 
     let humidity = document.querySelector('.current .humidity');
     humidity.innerText = `Humidity: ${(weather.main.humidity)}`;
