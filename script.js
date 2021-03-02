@@ -1,3 +1,6 @@
+localStorage.setItem("weatherO", getResults);
+console.log(localStorage.getItem("weatherO"));
+
 
 
 
@@ -60,4 +63,15 @@ function displayResults (weather) {
 
         return `${day} ${date} ${month} ${year}`;
     }
+
+// function populateCards(weather){
+//     $('.cardContainer').empty();
+//     weather.forEach(weather => {
+//         var newCard = $('#cardTemplate').clone();
+//         newCard.removeAttr('id');
+//         newCard.find('.cardTitle').text(displayResults)
+//     });
+//     $('cardContainer').append(newCard);
+// }
+
 
